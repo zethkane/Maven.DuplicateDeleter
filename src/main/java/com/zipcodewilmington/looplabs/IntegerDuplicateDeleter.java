@@ -44,8 +44,8 @@ public final class IntegerDuplicateDeleter extends DuplicateDeleter<Integer> {
 
     @Override
     public Integer[] removeDuplicatesExactly(int exactNumberOfDuplications) {
-        Integer[] newArr = new Integer[array.length];
-        Integer[] finArr;
+        Integer[] jeff = new Integer[array.length];
+        Integer[] jeff1;
         Integer count = 0;
         Integer size = 0;
         Integer size2 = 0;
@@ -59,18 +59,18 @@ public final class IntegerDuplicateDeleter extends DuplicateDeleter<Integer> {
         }
             if (count != 0){
                 size++;
-                newArr[size2] = array[i];
+                jeff[size2] = array[i];
                 size2++;
                 count = 0;
             }
         }
-        finArr = new Integer[size];
-        for (int i = 0; i < newArr.length ; i++) {
-            if (newArr[i] != null){
-                finArr[i] = newArr[i];
+        jeff1 = new Integer[size];
+        for (int i = 0; i < jeff1.length ; i++) {
+            if (jeff[i] != null){
+                jeff1[i] = jeff[i];
             }
         }
 
-        return finArr;
+        return jeff1;
     }
 }
